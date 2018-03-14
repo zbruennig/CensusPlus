@@ -1694,7 +1694,7 @@ function CensusPlus_StartCensus()
 --			WhoLibByALeX.AskWho			 = function( args ) end
 
 			CensusPlus_Msg( "Using WhoLib" );
-			CensusPlus_UPDATEDELAY = 50
+			CensusPlus_UPDATEDELAY = 50;
 
 			--wholib.RegisterCallback("CensusPlus", "WHOLIB_QUERY_RESULT", CensusPlus_WhoLibEvent)
 
