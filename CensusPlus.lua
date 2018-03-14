@@ -572,7 +572,15 @@ function CensusPlus_OnLoad( this )
 	-- Update the version number
 	--
 	CensusPlusText:SetText("Census+ v"..CensusPlus_VERSION .. " " .. g_CensusPlusLocale );
-    CensusPlusText2:SetText( CENSUSPlus_UPLOAD );
+
+	-----------------------------------------------------
+	--
+	-- Edit 3/13/2018
+	-- Removed since Hades is not on WarcraftRealms.com
+	--
+	-----------------------------------------------------
+
+    -- CensusPlusText2:SetText( CENSUSPlus_UPLOAD );
 
 	--
 	-- Init constant tables
@@ -704,8 +712,16 @@ function CensusPlus_FriendsFrame_OnEvent(self, event, ...)
 end
 
 function CP_ProcessWhoEvent(query, ...)
+
+-------------------------------------------------------------------------
+--
+-- Edit 3/13/2018
+-- Changed this message to be more general, since "Sending is removed"
+--
+-------------------------------------------------------------------------
+
 	if( CensusPlus_PerCharInfo["Verbose"] == true ) then
-		CensusPlus_Msg("Results For: "..query);
+		CensusPlus_Msg("Query: "..query);
 	end
 
 
@@ -1759,7 +1775,15 @@ function CensusPlus_DisplayResults(  )
 	local total_time = time() - g_CensusPlus_StartTime;
 
 	CensusPlus_Msg(format(CENSUSPlus_FINISHED, g_NumNewCharacters, g_NumUpdatedCharacters, SecondsToTime( total_time )));
-	ChatFrame1:AddMessage(CENSUSPlus_UPLOAD, 0.5, 1.0, 1.0);
+
+-----------------------------------------------------
+--
+-- Edit 3/13/2018
+-- Removed since Hades is not on WarcraftRealms.com
+--
+-----------------------------------------------------
+
+	-- ChatFrame1:AddMessage(CENSUSPlus_UPLOAD, 0.5, 1.0, 1.0);
 
 	CensusPlus_UpdateView();
 	g_LastCensusRun = time();
@@ -4181,9 +4205,16 @@ end
 
 function CensusPlus_SendWho( msg )
 
-	if( CensusPlus_PerCharInfo["Verbose"] == true ) then
-		CensusPlus_Msg(format(CENSUSPlus_SENDING, msg));
-	end
+-----------------------------------------
+--
+-- Removed 3/13/2018.
+-- This clogged up the chat log too much.
+--
+-----------------------------------------
+
+	-- if( CensusPlus_PerCharInfo["Verbose"] == true ) then
+	-- 	CensusPlus_Msg(format(CENSUSPlus_SENDING, msg));
+	-- end
 
 	if wholib then
 		wholib:AskWho({query = msg, queue = wholib.WHOLIB_QUEUE_QUIET, callback = CP_ProcessWhoEvent })
