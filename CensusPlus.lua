@@ -1348,8 +1348,8 @@ function CensusPlus_StartCensus()
 		g_TempZoneCount = {};
 
         local counter = 0;
-        for counter = 1, 57, 3 do
-            local job = CensusPlus_CreateJob( counter, counter+3, nil, nil, nil );
+        for counter = 1, 58, 2 do
+            local job = CensusPlus_CreateJob( counter, counter+1, nil, nil, nil );
             InsertJobIntoQueue(job);
         end
 
@@ -1694,7 +1694,7 @@ function CensusPlus_StartCensus()
 --			WhoLibByALeX.AskWho			 = function( args ) end
 
 			CensusPlus_Msg( "Using WhoLib" );
-			CensusPlus_UPDATEDELAY = 50;
+			CensusPlus_UPDATEDELAY = 25;
 
 			--wholib.RegisterCallback("CensusPlus", "WHOLIB_QUERY_RESULT", CensusPlus_WhoLibEvent)
 
