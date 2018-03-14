@@ -1356,9 +1356,6 @@ function CensusPlus_StartCensus()
 				InsertJobIntoQueue(job);
 		end
 
-    local job = CensusPlus_CreateJob( 85, 85, "Human", "Warrior", nil );
-    InsertJobIntoQueue(job);
-
 -----------------------------------------------------------------------------------
 --
 --Update 3/13/2018: Modified old search queries to poll more (all ideally) of the
@@ -1367,6 +1364,9 @@ function CensusPlus_StartCensus()
 -----------------------------------------------------------------------------------
 
 		--HUMANS
+
+		local job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Warrior"}, nil );
+		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
@@ -1391,16 +1391,7 @@ function CensusPlus_StartCensus()
 
 		--DWARVES
 
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Paladin"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Priest"}, nil );
@@ -1410,12 +1401,6 @@ function CensusPlus_StartCensus()
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Shaman"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--NIGHT ELVES
@@ -1446,9 +1431,6 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
@@ -1458,24 +1440,12 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Warlock"}, nil );
-		InsertJobIntoQueue(job);
-
 		--DRAENEI
-
-		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Shaman"}, nil );
@@ -1535,49 +1505,21 @@ function CensusPlus_StartCensus()
 
 		--UNDEAD
 
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Warlock"}, nil );
-		InsertJobIntoQueue(job);
-
 		--TAUREN
-
-		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Death Knight"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Shaman"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Shaman","Priest","Warrior","Death Knight","Hunter"}, nil);
 
 		--TROLL
 
@@ -1585,9 +1527,6 @@ function CensusPlus_StartCensus()
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Priest"}, nil );
@@ -1600,9 +1539,6 @@ function CensusPlus_StartCensus()
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Druid"}, nil );
@@ -1619,36 +1555,21 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Warlock"}, nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Priest"});
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Warlock","Rogue"}, nil)
 		InsertJobIntoQueue(job);
 
 		--GOBLIN
 
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Shaman"}, nil );
@@ -1657,7 +1578,16 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Warlock"}, nil );
+
+		-- Combinations of multiple races
+
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin","Draenei"}, {"Death Knight","Hunter","Warrior"}, nil);
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Troll","Goblin","Gnome"}, {"Rogue","Warlock"}, nil);
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Undead","Dwarf"}, {"Rogue","Warlock","Warrior","Hunter","Mage"});
 		InsertJobIntoQueue(job);
 
 		g_IsCensusPlusInProgress = true;
@@ -1773,16 +1703,25 @@ end
 -- Create a who command text for the input job
 --
 -----------------------------------------------------------------------------------
+
+-- EDIT 3/14/2018, make Race and Class arrays, to add multiple at once
+
 function CensusPlus_CreateWhoText(job)
 	local whoText = "";
 	local race = job.m_Race;
 	if (race ~= nil) then
-		whoText = whoText.." r-\""..race.."\"";
+		local n = 1;
+		for i = n, getn(race), 1 do
+			whoText = whoText.." r-\""..race[i].."\"";
+		end
 	end
 
 	local class = job.m_Class;
 	if (class ~= nil) then
-		whoText = whoText.." c-\""..class.."\"";
+		local n = 1;
+		for i = n, getn(class), 1 do
+			whoText = whoText.." c-\""..class[i].."\"";
+		end
 	end
 
 	local minLevel = tostring( job.m_MinLevel );
@@ -1838,18 +1777,20 @@ function CensusPlus_DumpJob( job )
 	local whoText = "";
 	local race = job.m_Race;
 	if (race ~= nil) then
-		local n = 0;
-		for i = n, getn(race), 1 do
-			whoText = whoText.." R: "..race[i];
-		end
+		local n = 1;
+		whoText = whoText.." R: "..race[1];
+		-- for i = n, getn(race)-1, 1 do
+		-- 	whoText = whoText.." R: "..race[i];
+		-- end
 	end
 
 	local class = job.m_Class;
 	if (class ~= nil) then
-		local n = 0;
-		for i = n, getn(class), 1 do
-			whoText = whoText.." C: "..class[i];
-		end
+		local n = 1;
+		whoText = whoText.." C: "..class[1];
+		-- for i = n, getn(class)-1, 1 do
+		-- 	whoText = whoText.." C: "..class[i];
+		-- end
 	end
 
 	local minLevel = job.m_MinLevel;
