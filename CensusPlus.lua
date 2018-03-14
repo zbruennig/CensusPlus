@@ -45,7 +45,7 @@ local g_TZWarningSent = false;
 -- Constants
 --
 ---------------------------------------------------------------------------------
-local CensusPlus_VERSION = "_HADES_1.1"; 			-- version
+local CensusPlus_VERSION = "_HADES_1.2"; 			-- version
 local CensusPlus_MAXBARHEIGHT = 128;			-- Length of blue bars
 local CensusPlus_NUMGUILDBUTTONS = 10;			-- How many guild buttons are on the UI?
 local MAX_CHARACTER_LEVEL = 85;					-- Maximum level a PC can attain
