@@ -45,7 +45,7 @@ local g_TZWarningSent = false;
 -- Constants
 --
 ---------------------------------------------------------------------------------
-local CensusPlus_VERSION = "_HADES_1.0"; 			-- version
+local CensusPlus_VERSION = "_HADES_1.1"; 			-- version
 local CensusPlus_MAXBARHEIGHT = 128;			-- Length of blue bars
 local CensusPlus_NUMGUILDBUTTONS = 10;			-- How many guild buttons are on the UI?
 local MAX_CHARACTER_LEVEL = 85;					-- Maximum level a PC can attain
@@ -572,15 +572,6 @@ function CensusPlus_OnLoad( this )
 	-- Update the version number
 	--
 	CensusPlusText:SetText("Census+ v"..CensusPlus_VERSION .. " " .. g_CensusPlusLocale );
-
-	-----------------------------------------------------
-	--
-	-- Edit 3/13/2018
-	-- Removed since Hades is not on WarcraftRealms.com
-	--
-	-----------------------------------------------------
-
-    -- CensusPlusText2:SetText( CENSUSPlus_UPLOAD );
 
 	--
 	-- Init constant tables
@@ -1348,13 +1339,13 @@ function CensusPlus_StartCensus()
 		g_TempZoneCount = {};
 
         local counter = 0;
-        for counter = 1, 58, 2 do
+        for counter = 1, 60, 2 do
             local job = CensusPlus_CreateJob( counter, counter+1, nil, nil, nil );
             InsertJobIntoQueue(job);
         end
 
-				counter=60;
-				for counter = 60, 84, 1 do
+				counter=61;
+				for counter = 61, 84, 1 do
 						local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
 						InsertJobIntoQueue(job);
 				end
@@ -1763,15 +1754,6 @@ function CensusPlus_DisplayResults(  )
 	local total_time = time() - g_CensusPlus_StartTime;
 
 	CensusPlus_Msg(format(CENSUSPlus_FINISHED, g_NumNewCharacters, g_NumUpdatedCharacters, SecondsToTime( total_time )));
-
------------------------------------------------------
---
--- Edit 3/13/2018
--- Removed since Hades is not on WarcraftRealms.com
---
------------------------------------------------------
-
-	-- ChatFrame1:AddMessage(CENSUSPlus_UPLOAD, 0.5, 1.0, 1.0);
 
 	CensusPlus_UpdateView();
 	g_LastCensusRun = time();

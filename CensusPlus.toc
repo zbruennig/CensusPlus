@@ -1,5 +1,5 @@
 ## Interface: 40000
-## Version: _HADES_1.0
+## Version: _HADES_1.1
 ## Title: CensusPlus (Hades)
 ## Notes: Collects and displays census information. This AddOn is licenced under the GNU GPL, see GPL.txt for details.
 ## Original Author: Ian Pieragostini

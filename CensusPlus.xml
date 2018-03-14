@@ -67,7 +67,7 @@
         <NormalTexture file="Interface\AddOns\CensusPlus\Skin\CensusPlus_LevelBar" />
         <Scripts>
     		<OnClick function="CensusPlus_OnClickLevel" />
-    		<OnLoad function="CensusPlus_OnLoadLevel"/>    
+    		<OnLoad function="CensusPlus_OnLoadLevel"/>
             <OnLeave>
 				 GameTooltip:Hide();
 			</OnLeave>
@@ -80,7 +80,7 @@
         </Size>
         <Scripts>
     		<OnClick function="CensusPlus_OnClickLevel" />
-    		<OnLoad function="CensusPlus_OnLoadLevel"/>    
+    		<OnLoad function="CensusPlus_OnLoadLevel"/>
         </Scripts>
     </Button>
     <Button name="CensusPlusGuildButtonTemplate" virtual="true">
@@ -181,8 +181,8 @@
             </OnHide>
         </Scripts>
     </Frame>
-    
-    
+
+
     <Frame name="CensusPlus" parent="UIParent" hidden="true" enableMouse="true" toplevel="true" movable="true">
         <Size>
             <AbsDimension x="846" y="512" />
@@ -220,7 +220,7 @@
                         </Anchor>
                     </Anchors>
 					<TexCoords left="0" right="0.65" top="0" bottom="1.0">
-					</TexCoords>					
+					</TexCoords>
                 </Texture>
             </Layer>
             <Layer level="ARTWORK">
@@ -229,16 +229,6 @@
                         <Anchor point="TOPLEFT" relativeTo="CensusPlus" relativeFrom="TOPLEFT">
                             <Offset>
                                 <AbsDimension x="16" y="-12" />
-                            </Offset>
-                        </Anchor>
-                    </Anchors>
-                </FontString>
-                <FontString name="CensusPlusText2" inherits="GameFontHighlight" text="WarcraftRealms.com">
-                    <Color r="0.4" g="0.8" b="1.0" />
-                    <Anchors>
-                        <Anchor point="TOPLEFT" relativeTo="CensusPlus" relativeFrom="TOPLEFT">
-                            <Offset>
-                                <AbsDimension x="140" y="-12" />
                             </Offset>
                         </Anchor>
                     </Anchors>
@@ -423,7 +413,7 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_STOPCENSUS, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
@@ -448,7 +438,7 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_PRUNECENSUS, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
@@ -473,7 +463,7 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_PURGEDATABASE, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
@@ -901,7 +891,7 @@
         <Size>
             <AbsDimension x="0" y="0" />
         </Size>
-			
+
                 <Anchors>
                     <Anchor point="BOTTOMLEFT" relativePoint="TOPLEFT">
                         <Offset>
@@ -2445,12 +2435,12 @@
             </Button>
         </Frames>
         <Scripts>
-    		<OnLoad function="CensusPlus_OnLoad"/>    
+    		<OnLoad function="CensusPlus_OnLoad"/>
             <OnShow function="CensusPlus_OnShow" />
             <OnUpdate function="CensusPlus_OnUpdate" />
             <OnEvent>
 				CensusPlus_OnEvent(event,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
-			</OnEvent>			
+			</OnEvent>
             <OnMouseUp>
                 if ( self.isMoving ) then
                     self:StopMovingOrSizing();
@@ -2602,7 +2592,7 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
-			</Layer>            
+			</Layer>
         </Layers>
         <Frames>
             <CheckButton name="CP_OptionAutoClose" id="0">
@@ -2692,11 +2682,11 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_AUTOSTART_TOOLTIP, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
-					</OnLeave>					
+					</OnLeave>
                 </Scripts>
                 <NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
                 <PushedTexture file="Interface\Buttons\UI-CheckBox-Down" />
@@ -2747,11 +2737,11 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_VERBOSE_TOOLTIP, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
-					</OnLeave>					
+					</OnLeave>
                 </Scripts>
                 <NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
                 <PushedTexture file="Interface\Buttons\UI-CheckBox-Down" />
@@ -2802,11 +2792,11 @@
                     <OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
 						GameTooltip:SetText(CENSUSPlus_AUTOCENSUS_TOOLTIP, 1.0, 1.0, 1.0);
-						GameTooltip:Show();					
+						GameTooltip:Show();
 					</OnEnter>
                     <OnLeave>
 						GameTooltip:Hide();
-					</OnLeave>					
+					</OnLeave>
                 </Scripts>
                 <NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
                 <PushedTexture file="Interface\Buttons\UI-CheckBox-Down" />
@@ -2914,7 +2904,7 @@
                 <CheckedTexture file="Interface\Buttons\UI-CheckBox-Check" />
                 <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled" />
             </CheckButton>
-			
+
             <CheckButton name="CP_OptionUseLogarithmicBars" id="1">
                 <Size>
                     <AbsDimension x="20" y="20" />
@@ -2966,7 +2956,7 @@
                 <HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD" />
                 <CheckedTexture file="Interface\Buttons\UI-CheckBox-Check" />
                 <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled" />
-            </CheckButton>			
+            </CheckButton>
 
             <Button name="CP_OptionCloseButton" inherits="UIPanelCloseButton">
                 <Anchors>
