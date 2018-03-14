@@ -1367,296 +1367,296 @@ function CensusPlus_StartCensus()
 
 		--HUMANS
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Paladin", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Human", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Human"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--DWARVES
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Paladin", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Dwarf", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--NIGHT ELVES
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Night Elf", "Druid", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
 
 		--GNOMES
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Gnome", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--DRAENEI
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Paladin", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Draenei", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
 		--WORGEN
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Worgen", "Druid", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
 
 		--ORC
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Orc", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--UNDEAD
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Undead", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--TAUREN
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Paladin", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Tauren", "Druid", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Tauren"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
 
 		--TROLL
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Troll", "Druid", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
 
 		--BLOOD ELF
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Paladin", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Paladin"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Blood Elf", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf", {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--GOBLIN
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Warrior", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Warrior"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Hunter", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Rogue", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Rogue"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Priest", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Death Knight", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Shaman", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Mage", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Warlock", nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		g_IsCensusPlusInProgress = true;
