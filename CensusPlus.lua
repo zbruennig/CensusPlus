@@ -1405,19 +1405,7 @@ function CensusPlus_StartCensus()
 
 		--NIGHT ELVES
 
-		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Mage"}, nil );
@@ -1428,24 +1416,12 @@ function CensusPlus_StartCensus()
 
 		--GNOMES
 
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Death Knight"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
 		--DRAENEI
 
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Paladin"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Priest"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Shaman"}, nil );
@@ -1456,19 +1432,10 @@ function CensusPlus_StartCensus()
 
 		--WORGEN
 
-		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Worgen"}, {"Mage"}, nil );
@@ -1488,25 +1455,15 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Rogue"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Warlock"}, nil );
-		InsertJobIntoQueue(job);
+		job = CensusPlus_CreateJob( 85, 85, {"Orc"}, {"Rogue","Mage","Warlock"});
 
 		--UNDEAD
-
-		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Undead"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
@@ -1523,16 +1480,7 @@ function CensusPlus_StartCensus()
 
 		--TROLL
 
-		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Warrior"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Hunter"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Death Knight"}, nil );
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Troll"}, {"Shaman"}, nil );
@@ -1569,9 +1517,6 @@ function CensusPlus_StartCensus()
 
 		--GOBLIN
 
-		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Goblin"}, {"Shaman"}, nil );
 		InsertJobIntoQueue(job);
 
@@ -1587,7 +1532,19 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Troll","Goblin","Gnome"}, {"Rogue","Warlock"}, nil);
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Undead","Dwarf"}, {"Rogue","Warlock","Warrior","Hunter","Mage"});
+		job = CensusPlus_CreateJob( 85, 85, {"Undead","Dwarf"}, {"Warlock","Warrior","Hunter","Mage"});
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Undead","Dwarf","Night Elf"}, {"Rogue"}, nil);
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome","Worgen"}, {"Warrior","Priest","Death Knight"})
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Night Elf","Undead","Goblin","Draenei","Troll"}, {"Priest"})
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Troll","Night Elf"}, {"Death Knight","Warrior"});
 		InsertJobIntoQueue(job);
 
 		g_IsCensusPlusInProgress = true;
