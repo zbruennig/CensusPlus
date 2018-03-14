@@ -1338,20 +1338,25 @@ function CensusPlus_StartCensus()
 		g_TempZoneCount = nil;
 		g_TempZoneCount = {};
 
-        local counter = 0;
-        for counter = 1, 60, 2 do
-            local job = CensusPlus_CreateJob( counter, counter+1, nil, nil, nil );
-            InsertJobIntoQueue(job);
-        end
-
-				counter=61;
-				for counter = 61, 84, 1 do
-						local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
-						InsertJobIntoQueue(job);
-				end
-
-        local job = CensusPlus_CreateJob( 85, 85, "Human", "Warrior", nil );
+    local counter = 0;
+    for counter = 1, 28, 3 do
+    		local job = CensusPlus_CreateJob( counter, counter+2, nil, nil, nil );
         InsertJobIntoQueue(job);
+    end
+
+		counter = 31;
+		for counter = 31, 59, 2 do
+				local job = CensusPlus_CreateJob( counter, counter+1, nil, nil, nil);
+				InsertJobIntoQueue(job);
+
+		counter=61;
+		for counter = 61, 84, 1 do
+				local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
+				InsertJobIntoQueue(job);
+		end
+
+    local job = CensusPlus_CreateJob( 85, 85, "Human", "Warrior", nil );
+    InsertJobIntoQueue(job);
 
 -----------------------------------------------------------------------------------
 --
