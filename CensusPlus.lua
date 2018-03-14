@@ -1348,6 +1348,7 @@ function CensusPlus_StartCensus()
 		for counter = 31, 59, 2 do
 				local job = CensusPlus_CreateJob( counter, counter+1, nil, nil, nil);
 				InsertJobIntoQueue(job);
+		end
 
 		counter=61;
 		for counter = 61, 84, 1 do
@@ -1630,7 +1631,7 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf", {"Warlock"}, nil );
+		job = CensusPlus_CreateJob( 85, 85, {"Blood Elf"}, {"Warlock"}, nil );
 		InsertJobIntoQueue(job);
 
 		--GOBLIN
@@ -1838,15 +1839,17 @@ function CensusPlus_DumpJob( job )
 	local race = job.m_Race;
 	if (race ~= nil) then
 		local n = 0;
-		for i = n, getn(race), 1
+		for i = n, getn(race), 1 do
 			whoText = whoText.." R: "..race[i];
+		end
 	end
 
 	local class = job.m_Class;
 	if (class ~= nil) then
 		local n = 0;
-		for i = n, getn(class), 1
+		for i = n, getn(class), 1 do
 			whoText = whoText.." C: "..class[i];
+		end
 	end
 
 	local minLevel = job.m_MinLevel;
