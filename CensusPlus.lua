@@ -1346,19 +1346,18 @@ function CensusPlus_StartCensus()
 
 		g_TempZoneCount = nil;
 		g_TempZoneCount = {};
-		--
-		-- First job covers all characters by searching all levels
-		--
---		local job = {m_MinLevel = 1, m_MaxLevel = MAX_CHARACTER_LEVEL};
---		InsertJobIntoQueue(job);
-        --
-        --  Modified job listing, let's go in 5 level increments
-        --
+
         local counter = 0;
-        for counter = 1, 84, 1 do
-            local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
+        for counter = 1, 57, 3 do
+            local job = CensusPlus_CreateJob( counter, counter+3, nil, nil, nil );
             InsertJobIntoQueue(job);
         end
+
+				counter=60;
+				for counter = 60, 84, 1 do
+						local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
+						InsertJobIntoQueue(job);
+				end
 
         local job = CensusPlus_CreateJob( 85, 85, "Human", "Warrior", nil );
         InsertJobIntoQueue(job);
@@ -1663,17 +1662,6 @@ function CensusPlus_StartCensus()
 
 		job = CensusPlus_CreateJob( 85, 85, "Goblin", "Warlock", nil );
 		InsertJobIntoQueue(job);
-
-
---        for counter = 60, MAX_CHARACTER_LEVEL, 1  do
---			local job = CensusPlus_CreateJob( counter, counter, nil, nil, nil );
---			InsertJobIntoQueue(job);
---        end
-
---	Test inserts
---        local job = CensusPlus_CreateJob( 11, 12, "Troll", nil, nil );
---        InsertJobIntoQueue(job);
-
 
 		g_IsCensusPlusInProgress = true;
 		g_WaitingForWhoUpdate = false;
