@@ -1830,16 +1830,23 @@ end
 -- Debug function do dump a job
 --
 -----------------------------------------------------------------------------------
+
+-- EDIT 3/14/2018, make Race and Class arrays, to add multiple at once
+
 function CensusPlus_DumpJob( job )
 	local whoText = "";
 	local race = job.m_Race;
 	if (race ~= nil) then
-		whoText = whoText.." R: "..race;
+		local n = 0;
+		for i = n, getn(race), 1
+			whoText = whoText.." R: "..race[i];
 	end
 
 	local class = job.m_Class;
 	if (class ~= nil) then
-		whoText = whoText.." C: "..class;
+		local n = 0;
+		for i = n, getn(class), 1
+			whoText = whoText.." C: "..class[i];
 	end
 
 	local minLevel = job.m_MinLevel;
