@@ -721,13 +721,13 @@ function CP_ProcessWhoEvent(query, ...)
 
 	local whoText = CensusPlus_CreateWhoText(g_CurrentJob);
 	if whoText and whoText == query then
-		g_WaitingForWhoUpdate = false
+		g_WaitingForWhoUpdate = false;
 	end
 		return;
 	end
 
 	CensusPlus_ProcessWhoResults();
-	if (numWhoResults > MAX_WHO_RESULTS) then
+	if (numWhoResults >= MAX_WHO_RESULTS) then
 		--
 		-- Who list is overflowed, split the query to make the return smaller
 		--
@@ -761,7 +761,7 @@ function CP_ProcessWhoEvent(query, ...)
 				local thisFactionRaces = CensusPlus_GetFactionRaces(factionGroup);
 				local numRaces = table.getn(thisFactionRaces);
 				for i = 1, numRaces, 1 do
-					local job = CensusPlus_CreateJob( level, level, thisFactionRaces[i], nil, nil );
+					local job = CensusPlus_CreateJob( level, level, {thisFactionRaces[i]}, nil, nil );
 					InsertJobIntoQueue(job);
 				end
 			else
@@ -772,7 +772,7 @@ function CP_ProcessWhoEvent(query, ...)
 					local thisRaceClasses = GetRaceClasses(race);
 					local numClasses = table.getn(thisRaceClasses);
 					for i = 1, numClasses, 1 do
-						local job = CensusPlus_CreateJob( level, level, race, thisRaceClasses[i], nil );
+						local job = CensusPlus_CreateJob( level, level, {race}, {thisRaceClasses[i]}, nil );
 						InsertJobIntoQueue(job);
 					end
 				else
@@ -783,7 +783,7 @@ function CP_ProcessWhoEvent(query, ...)
 						--
 						local letters = GetNameLetters();
 						for i=1, table.getn( letters ), 1 do
-							local job = CensusPlus_CreateJob( level, level, race, class, letters[i] );
+							local job = CensusPlus_CreateJob( level, level, {race}, {class}, letters[i] );
 							InsertJobIntoQueue(job);
 						end
 --							else
@@ -1391,16 +1391,10 @@ function CensusPlus_StartCensus()
 
 		--DWARVES
 
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Paladin"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Priest"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Death Knight"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Shaman"}, nil );
+		InsertJobIntoQueue(job);
+
+		job = CensusPlus_CreateJob( 85, 85, {"Dwarf"}, {"Paladin","Priest","Death Knight"});
 		InsertJobIntoQueue(job);
 
 		--NIGHT ELVES
@@ -1408,16 +1402,11 @@ function CensusPlus_StartCensus()
 		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Hunter"}, nil );
 		InsertJobIntoQueue(job);
 
-		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
-
 		job = CensusPlus_CreateJob( 85, 85, {"Night Elf"}, {"Druid"}, nil );
 		InsertJobIntoQueue(job);
 
 		--GNOMES
 
-		job = CensusPlus_CreateJob( 85, 85, {"Gnome"}, {"Mage"}, nil );
-		InsertJobIntoQueue(job);
 
 		--DRAENEI
 
@@ -1425,9 +1414,6 @@ function CensusPlus_StartCensus()
 		InsertJobIntoQueue(job);
 
 		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Shaman"}, nil );
-		InsertJobIntoQueue(job);
-
-		job = CensusPlus_CreateJob( 85, 85, {"Draenei"}, {"Mage"}, nil );
 		InsertJobIntoQueue(job);
 
 		--WORGEN
@@ -1526,6 +1512,9 @@ function CensusPlus_StartCensus()
 
 		-- Combinations of multiple races
 
+		job = CensusPlus_CreateJob( 85, 85, {"Gnome","Night Elf","Draenei"}, {"Mage"}, nil );
+		InsertJobIntoQueue(job);
+
 		job = CensusPlus_CreateJob( 85, 85, {"Goblin","Draenei"}, {"Death Knight","Hunter","Warrior"}, nil);
 		InsertJobIntoQueue(job);
 
@@ -1554,7 +1543,7 @@ function CensusPlus_StartCensus()
 		local hour, minute = GetGameTime();
 		g_TakeHour = hour;
 		g_ResetHour = true;
-
+k
 		wholib = wholib or LibStub:GetLibrary("LibWho-2.0", true);
 		--
 		--  Subvert WhoLib
