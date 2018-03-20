@@ -421,7 +421,7 @@ end
 function CensusPlus_GetFactionRaces(faction)
 	local ret = {};
 	if (faction == CENSUSPlus_HORDE) then
-		ret = {CENSUSPlus_ORC, CENSUSPlus_TAUREN, CENSUSPlus_TROLL, CENSUSPlus_UNDEAD, CENSUSPlus_BLOODELF, CENSUSPlus_GOBLIN };
+		ret = {CENSUSPlus_ORC, CENSUSPlus_TAUREN, CENSUSPlus_TROLL, CENSUSPlus_UNDEAD, CENSUSPlus_BLOODELF, CENSUSPlus_GOBLIN};
 	elseif (faction == CENSUSPlus_ALLIANCE) then
 		ret = {CENSUSPlus_DWARF, CENSUSPlus_GNOME, CENSUSPlus_HUMAN, CENSUSPlus_NIGHTELF, CENSUSPlus_DRAENEI, CENSUSPlus_WORGEN};
 	end
@@ -758,10 +758,10 @@ function CP_ProcessWhoEvent(query, ...)
 				--
 				-- This job does not specify race, so split it that way, making four new jobs
 				--
-				local thisFactionRaces = CensusPlus_GetFactionRaces(factionGroup);
-				local numRaces = table.getn(thisFactionRaces);
+				local allRaces = {CENSUSPlus_ORC, CENSUSPlus_TAUREN, CENSUSPlus_TROLL, CENSUSPlus_UNDEAD, CENSUSPlus_BLOODELF, CENSUSPlus_GOBLIN, CENSUSPlus_DWARF, CENSUSPlus_GNOME, CENSUSPlus_HUMAN, CENSUSPlus_NIGHTELF, CENSUSPlus_DRAENEI, CENSUSPlus_WORGEN};
+				local numRaces = table.getn(allRaces); --This line is showing all races, even those of other factions. Intended for GMs only.
 				for i = 1, numRaces, 1 do
-					local job = CensusPlus_CreateJob( level, level, {thisFactionRaces[i]}, nil, nil );
+					local job = CensusPlus_CreateJob( level, level, {allRaces[i]}, nil, nil );
 					InsertJobIntoQueue(job);
 				end
 			else
@@ -769,10 +769,10 @@ function CP_ProcessWhoEvent(query, ...)
 					--
 					-- This job does not specify class, so split it that way, making more jobs
 					--
-					local thisRaceClasses = GetRaceClasses(race);
+					local thisRaceClasses = GetRaceClasses(race[1]);
 					local numClasses = table.getn(thisRaceClasses);
 					for i = 1, numClasses, 1 do
-						local job = CensusPlus_CreateJob( level, level, {race}, {thisRaceClasses[i]}, nil );
+						local job = CensusPlus_CreateJob( level, level, race, {thisRaceClasses[i]}, nil );
 						InsertJobIntoQueue(job);
 					end
 				else
@@ -783,7 +783,7 @@ function CP_ProcessWhoEvent(query, ...)
 						--
 						local letters = GetNameLetters();
 						for i=1, table.getn( letters ), 1 do
-							local job = CensusPlus_CreateJob( level, level, {race}, {class}, letters[i] );
+							local job = CensusPlus_CreateJob( level, level, race, class, letters[i] );
 							InsertJobIntoQueue(job);
 						end
 --							else
