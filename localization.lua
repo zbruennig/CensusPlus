@@ -36,13 +36,15 @@ CENSUSPlus_STOP             = "Stop";
 CENSUSPlus_PRUNE			= "Prune";
 
 CENSUSPlus_TAKECENSUS       = "Take a census of players \ncurrently online on this server \nand in this faction";
-CENSUSPlus_PURGEDATABASE    = "Purge the database of all data";
-CENSUSPlus_PAUSECENSUS      = "Pause the current census";
-CENSUSPlus_UNPAUSECENSUS    = "Un-Pause the current census";
-CENSUSPlus_STOPCENSUS       = "Stop the currently active CensusPlus";
+CENSUSPlus_PURGEDATABASE    = "Purge the database of all data.";
+CENSUSPlus_PAUSECENSUS      = "Pause the current census.";
+CENSUSPlus_UNPAUSECENSUS    = "Un-Pause the current census.";
+CENSUSPlus_STOPCENSUS       = "Stop the currently active CensusPlus.";
 CENSUSPlus_PRUNECENSUS		= "Prune the database by removing characters not seen in 30 days.";
 
 CENSUSPlus_PRUNEINFO		= "Pruned %d characters.";
+
+CENSUSPlus_LOWLEVEL     = "Search all zones for low level characters.";
 
 CENSUSPlus_PURGEMSG         = "Purged character database.";
 CENSUSPlus_ISINPROGRESS     = "A CensusPlus is in progress, try again later";

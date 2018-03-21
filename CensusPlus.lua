@@ -1296,6 +1296,14 @@ end
 --end
 
 
+-----------------------------------------------------------------------------------
+--
+-- Search for Low Level players in higher level zones
+--
+-----------------------------------------------------------------------------------
+function CensusPlus_LowLevel()
+	CensusPlus_Msg("You have called the incomplete low level function.");
+end
 
 -----------------------------------------------------------------------------------
 --

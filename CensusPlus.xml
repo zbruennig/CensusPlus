@@ -470,6 +470,31 @@
 					</OnLeave>
                 </Scripts>
             </Button>
+            <Button name ="HadesLowLevelButton" inherits="UIPanelButtonTemplate" text="Low Levels">
+                <Size>
+                    <AbsDimension x="128" y="21" />
+                </Size>
+                <Anchors>
+                    <Anchor point = "TOPLEFT">
+                      <Offset>
+                          <AbsDimension x="700" y="-470" />
+                      </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnClick>
+                        CensusPlus_LowLevel();
+                    </OnClick>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(CENSUSPlus_LOWLEVEL, 1.0, 1.0, 1.0);
+                        GameTooltip:Show();
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </Button>
             <Button name="CensusPlusGuildButton1" inherits="CensusPlusGuildButtonTemplate" id="1">
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="CensusPlus">
